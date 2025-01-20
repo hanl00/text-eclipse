@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Text Eclipse",
+  "version": "1.0",
+
+  "description": "Blocks out content containing specific characters",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["text-eclipse.ts"]
+    }
+  ]
+}
